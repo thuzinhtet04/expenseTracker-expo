@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  * {
+    @apply font-semibold;
+  }
+  :root {
+    --color-primary: green;
+    --color-primary-text: rgb(209, 209, 209);
+  }
+  .dark {
+    --color-primary: blue;
+    --color-primary-text: rgb(32, 32, 32);
+  }
+}
+@layer utilities{
+    .link{
+        @apply text-primary;
+    }
+}
