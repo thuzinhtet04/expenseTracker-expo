@@ -93,8 +93,11 @@ const SignUpPage = () => {
             className="p-2 border rounded w-2/3 mx-auto"
           />
         </View>
-        <TouchableOpacity onPress={onSignUpPress} className="bg-primary mt-2 p-2 rounded mx-auto w-2/3 text-center text-primary_text">
-          Sign up
+        <TouchableOpacity
+          onPress={onSignUpPress}
+          className="bg-primary mt-2 p-2 rounded mx-auto w-2/3 "
+        >
+          <Text className="text-center text-primary_text"> Sign up</Text>
         </TouchableOpacity>
         <Text className="text-center mt-2">
           Already have an account?{" "}

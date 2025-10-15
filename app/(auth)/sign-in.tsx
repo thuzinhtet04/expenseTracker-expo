@@ -66,13 +66,13 @@ const SignUpPage = () => {
         </View>
         <TouchableOpacity
           onPress={onSignInPress}
-          className="bg-primary mt-2 p-2 rounded mx-auto w-2/3 text-center text-primary_text"
+          className="bg-primary mt-2 p-2 rounded mx-auto w-2/3 text-center"
         >
-          Sign In
+          <Text className="text-center  text-primary_text">Sign In</Text>
         </TouchableOpacity>
         <Text className="text-center mt-2">
           Don&apos;t have an account?{" "}
-          <Link href="/sign-in" className="link">
+          <Link href="/sign-up" className="link">
             Sign Up
           </Link>{" "}
         </Text>
