@@ -12,7 +12,7 @@ export default function RootLayout() {
   const colorScheme = Appearance.getColorScheme();
 
   return (
-    <SafeAreaView style={{}}>
+    <SafeAreaView style={{ flex: 1 }}>
       <Stack
         screenOptions={{
           headerShown: false,

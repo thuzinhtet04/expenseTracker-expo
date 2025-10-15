@@ -17,5 +17,5 @@
     "declarations.d.ts",
     "context/ThemeContext.js",
     "nativewind-env.d.ts"
-, "app/(auth)/sign-up.tsx"  ]
+, "app/(auth)/sign-up.tsx", "app/_layout.jsx"  ]
 }

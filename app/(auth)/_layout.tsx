@@ -1,20 +1,18 @@
+import { useAuth } from "@clerk/clerk-expo";
 import { Redirect, Stack } from "expo-router";
-import { Appearance } from "react-native";
-import "react-native-reanimated";
-import { SafeAreaView } from "react-native-safe-area-context";
 
-export default function RootLayout() {
-  const colorScheme = Appearance.getColorScheme();
-  const conditin = false;
+export default function AuthRoutesLayout() {
+  const { isSignedIn } = useAuth();
 
-  if (conditin) return <Redirect href="/Home" />;
+  if (isSignedIn) {
+    return <Redirect href={"/"} />;
+  }
+
   return (
-    <SafeAreaView className="flex-1">
-      <Stack
-        screenOptions={{
-          headerShown: false,
-        }}
-      />
-    </SafeAreaView>
+    <Stack
+      screenOptions={{
+        headerShown: false,
+      }}
+    />
   );
 }

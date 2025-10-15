@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, TextInput, TouchableOpacity, View } from "react-native";
 
-const verify = () => {
+const Verify = ({onPress} : { onPress : () => {}}) => {
   return (
     <View className="  gap-3 justify-center  flex-1">
       <Text className="text-2xl font-bold text-center header-text">
@@ -18,4 +18,4 @@ const verify = () => {
   );
 };
 
-export default verify;
+export default Verify;
