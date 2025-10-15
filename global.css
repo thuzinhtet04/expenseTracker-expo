@@ -19,4 +19,7 @@
     .link{
         @apply text-primary;
     }
+    .header-text{
+      @apply text-yellow-600
+    }
 }

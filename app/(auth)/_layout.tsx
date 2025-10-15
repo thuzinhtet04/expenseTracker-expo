@@ -1,6 +1,7 @@
 import { Redirect, Stack } from "expo-router";
 import { Appearance } from "react-native";
 import "react-native-reanimated";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function RootLayout() {
   const colorScheme = Appearance.getColorScheme();
@@ -8,10 +9,12 @@ export default function RootLayout() {
 
   if (conditin) return <Redirect href="/Home" />;
   return (
-    <Stack
-      screenOptions={{
-        headerShown: false,
-      }}
-    />
+    <SafeAreaView className="flex-1">
+      <Stack
+        screenOptions={{
+          headerShown: false,
+        }}
+      />
+    </SafeAreaView>
   );
 }
